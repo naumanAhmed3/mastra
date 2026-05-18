@@ -1,5 +1,25 @@
 # @mastra/playground-ui
 
+## 29.0.0-alpha.1
+
+### Patch Changes
+
+- Moved the Level icon from its own column into the Name column, next to the trace name, on the Observability traces list. ([#16712](https://github.com/mastra-ai/mastra/pull/16712))
+
+- Added `align` and `stack` variants to `PageLayout.Row`. Use `stack="responsive"` for top bars that should collapse to a vertical stack on narrow viewports, and `align="center"` to vertically center children. Applied the new variants to the Prompts and Workflows top bars so the search field and primary action share a single row on desktop and stack on mobile. ([#16714](https://github.com/mastra-ai/mastra/pull/16714))
+
+  ```tsx
+  <PageLayout.Row align="center" stack="responsive">
+    <ListSearch ... />
+    <Button ...>Create</Button>
+  </PageLayout.Row>
+  ```
+
+- Updated dependencies [[`8cdb86c`](https://github.com/mastra-ai/mastra/commit/8cdb86ceed1137bc2768e147dce85a0692b9fb26), [`408be73`](https://github.com/mastra-ai/mastra/commit/408be73449dfab92b51eab8c6623b6c443debc25)]:
+  - @mastra/core@1.36.0-alpha.1
+  - @mastra/client-js@1.20.0-alpha.1
+  - @mastra/react@0.4.0-alpha.1
+
 ## 29.0.0-alpha.0
 
 ### Patch Changes
